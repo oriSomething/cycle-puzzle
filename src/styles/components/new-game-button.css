@@ -1,0 +1,21 @@
+.new-game-button {
+  box-sizing: border-box;
+  padding: .4rem .8rem;
+  margin: .5rem;
+  background-color: var(--new-game-button-bg-color);
+  border: transparent solid 2px;
+  border-radius: .2rem;
+  color: var(--new-game-button-text-color);
+  font-family: var(--buttons-font-family);
+  font-size: 1rem;
+}
+
+  .new-game-button:focus {
+    outline: none;
+    border: var(--new-game-button-border-color--focus) solid 2px;
+  }
+
+  .new-game-button:hover,
+  .new-game-button:active {
+    background-color: var(--new-game-button-bg-color--hover);
+  }

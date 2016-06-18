@@ -1,0 +1,24 @@
+:root {
+  --buttons-font-family: "Rubik", Helvetica, Arial, sans-serif;
+  --titles-font-family: "Bungee", Helvetica, Arial, sans-serif;
+
+  --the-puzzle-bg-color: #aaa;
+  --the-puzzle-border-color: #888;
+  --the-puzzle__button-bg-color: #ddd;
+  --the-puzzle__button-bg-color--active: #eee;
+  --the-puzzle__button-border-width: 2px;
+  --the-puzzle__button-border-color--focus: #fff;
+  --the-puzzle__button-border-color--hover: #fff;
+  --the-puzzle__game-over-color: #666;
+  --the-puzzle__counter-color: #777;
+
+  --puzzle-sizer__range__bg-color: #ddd;
+  --puzzle-sizer__range__thumb-bg-color: #888;
+  --puzzle-sizer__range__thumb-bg-color--focus: #aaa;
+  --puzzle-sizer__range__thumb-border-color--focus: #888;
+
+  --new-game-button-bg-color: #999;
+  --new-game-button-bg-color--hover: #777;
+  --new-game-button-text-color: #fff;
+  --new-game-button-border-color--focus: #666;
+}

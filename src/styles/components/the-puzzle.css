@@ -1,0 +1,111 @@
+.the-puzzle {
+  width: calc(100% - 20px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  perspective: 1500px;
+}
+
+.the-puzzle__board {
+  width: 100%;
+  max-width: 25rem;
+  padding: .2rem;
+  position: relative;
+  background-color: var(--the-puzzle-bg-color);
+  border-radius: .4rem;
+  border: var(--the-puzzle-border-color) solid 2px;
+  transform-style: preserve-3d;
+}
+
+  .the-puzzle__board--entering {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-name: the-puzzle__board--entering-animation;
+  }
+
+  @keyframes the-puzzle__board--entering-animation {
+    0% {
+      opacity: 0;
+      transform: rotateY(90deg);
+    }
+  }
+
+  .the-puzzle__board--leaving {
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-name: the-puzzle__board--leaving-animation;
+  }
+
+  @keyframes the-puzzle__board--leaving-animation {
+    100% {
+      opacity: 0;
+      transform: rotateY(90deg);
+    }
+  }
+
+.the-puzzle__buttons {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+}
+
+.the-puzzle__button {
+  padding: 0;
+  position: absolute;
+  background-color: var(--the-puzzle__button-bg-color);
+  border: none;
+  border-radius: 2px;
+  font-family: var(--buttons-font-family);
+  font-size: .8em;
+  font-weight: 400;
+  transition: left 250ms, top 250ms, background-color 250ms;
+  cursor: pointer;
+}
+
+@media (min-width: 25rem) {
+  .the-puzzle__button {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 35rem) {
+  .the-puzzle__button {
+    font-size: 1.5rem;
+  }
+}
+
+  .the-puzzle__button:focus {
+    outline: none;
+    border: var(--the-puzzle__button-border-width) solid var(--the-puzzle__button-border-color--focus);
+  }
+
+  .the-puzzle__button:hover {
+    outline: none;
+    border: var(--the-puzzle__button-border-width) solid var(--the-puzzle__button-border-color--hover);
+  }
+
+  .the-puzzle__button:active {
+    background-color: var(--the-puzzle__button-bg-color--active);
+  }
+
+.the-puzzle__game-over {
+  color: var(--the-puzzle__game-over-color);
+  z-index: -1;
+}
+
+.the-puzzle__counter {
+  bottom: -3.5rem;
+  width: 100%;
+  margin: 1.5rem auto 0;
+  color: var(--the-puzzle__counter-color);
+  font-size: 1.5rem;
+  line-height: 1;
+  text-align: center;
+  transition: opacity 500ms;
+}
+
+.the-puzzle__counter--invisible {
+  opacity: 0;
+}

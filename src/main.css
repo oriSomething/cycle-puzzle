@@ -1,0 +1,8 @@
+@import "./styles/variables.css";
+@import "./styles/reset/reset.css";
+@import "./styles/components/page-layout.css";
+@import "./styles/components/controls.css";
+@import "./styles/components/new-game-button.css";
+@import "./styles/components/puzzle-sizer.css";
+@import "./styles/components/the-puzzle.css";
+@import "./styles/utilities/text.css";

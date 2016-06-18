@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #333;
+  font-family: var(--buttons-font-family);
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-family: var(--titles-font-family);
+}
